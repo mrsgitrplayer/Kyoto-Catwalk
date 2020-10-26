@@ -6,12 +6,15 @@
     
     <style>
 
-body {background-color: rgb(199, 226, 230);}
-
+body {
+background-color: rgb(199, 226, 230);
+}
 h1   {color: rgb(82, 76, 76);
     text-align: center;
 }
-
+h2  {
+color:rgb(87, 87, 87);  
+}
 p    {color: black;}
 * {font-family: Tahoma;}
 * {font-family: Tahoma;
@@ -21,59 +24,64 @@ body {background-color: rgb(199, 226, 230);
 h1   {color: rgb(82, 76, 76);
     text-align: center;
 }
+nav {
+margin: -8px;  
+}
 ul {
   list-style-type: none;
-  padding-bottom: 40px;
+  display: block;
+  margin: 0px;
+  border: 0px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow: hidden;
+  background-color: rgb(148, 138, 138);
+  width: 100%;
+  color: white;
 }
 li {  
-    display: inline;
     float: left;
+
 }
-a {
-  display: block; width: 200px;
+li a {
+  display: block;
+  color:rgb(82, 76, 76);
+  text-align: center;
   float: right;
   margin: 3px;
-  padding: 8px;
-  background-color: #4e4e4e;
-  color: rgb(194, 185, 168);
-}
-a:link {
+  padding-left: 14px;
+  padding-right: 14px;
   text-decoration: none;
 }
-a:hover{
-    background-color: rgb(105, 105, 105);
+a:link {
+  color: white;
 }
+a:hover{
+    background-color: whitesmoke;
+    display: block
 
 
+}
 
 </style>
 </head>
 
   <body>
     <h1>From Kyoto to Catwalk</h1>
-
-      <p>
-          Some Text to see if this actually works. 
-      </p>
-
     <h2>Research Journal</h2>
 
 
-    <ul>
-        <a href="timeline.html">Timeline</a>
-        <a href="notes.html">Notes</a>
-        <a href="keywords.html">Key Words</a>
-        <a href="images.html">Images</a>
-        <a href="pagelinks.html">Page Links</a>
+    <nav>
+      <ul>
+          <li><a href="timeline.html">Timeline</a></li>
+          <li><a href="notes.html">Notes</a></li>
+          <li><a href="keywords.html">Key Words</a></li>
+          <li><a href="images.html">Images</a></li>
+          <li><a href="pagelinks.html">Page Links</a></li>
     </ul>
+  </nav>
 
-    <h2>Research Journal</h2>
-
-    <p>
-        On this page you can see the progress of my research - the trials and tribulations I faced.
-    </p>
-
-
+    <p>Just some Text</p>
   </div>
   </body>
 </html>
