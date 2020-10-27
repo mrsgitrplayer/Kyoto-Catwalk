@@ -1,87 +1,216 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <title>Kyoto to Catwalk</title>
-    
-    <style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
 
+  
 body {
-background-color: rgb(199, 226, 230);
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  background-color: darkgoldenrod;
+  color:  #333;
 }
-h1   {color: rgb(82, 76, 76);
-    text-align: center;
-}
-h2  {
-color:rgb(87, 87, 87);  
-}
-p    {color: black;}
-* {font-family: Tahoma;}
-* {font-family: Tahoma;
-}
-body {background-color: rgb(199, 226, 230);
-}
-h1   {color: rgb(82, 76, 76);
-    text-align: center;
-}
-nav {
-margin: -8px;  
-}
-ul {
-  list-style-type: none;
-  display: block;
-  margin: 0px;
-  border: 0px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  overflow: hidden;
-  background-color: rgb(148, 138, 138);
-  width: 100%;
-  color: white;
-}
-li {  
-    float: left;
-
-}
-li a {
-  display: block;
-  color:rgb(82, 76, 76);
+h1 {
   text-align: center;
-  float: right;
-  margin: 3px;
-  padding-left: 14px;
-  padding-right: 14px;
+  color:  #333;
+}
+
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: darkgoldenrod;
+  text-align: center;
+  margin-left:;
+  padding: 14px 16px;
   text-decoration: none;
 }
-a:link {
-  color: white;
-}
-a:hover{
-    background-color: whitesmoke;
-    display: block
 
-
+.dropdown {
+  float: left;
+  overflow: hidden;
 }
 
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: darkgoldenrod;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color:rgb(85, 85, 85);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(231, 191, 88);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color:  #333;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 </style>
 </head>
+<body>
 
-  <body>
-    <h1>From Kyoto to Catwalk</h1>
-    <h2>Research Journal</h2>
+  <h1>From Kyoto to Catwalk</h1>
 
-
-    <nav>
-      <ul>
-          <li><a href="timeline.html">Timeline</a></li>
-          <li><a href="notes.html">Notes</a></li>
-          <li><a href="keywords.html">Key Words</a></li>
-          <li><a href="images.html">Images</a></li>
-          <li><a href="pagelinks.html">Page Links</a></li>
-    </ul>
-  </nav>
-
-    <p>Just some Text</p>
+<div class="navbar">
+  <div class="dropdown">
+    <button class="dropbtn">Research Journal 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="first.html">25. October 2020</a>
+      <a href="second.html">Second</a>
+      <a href="third.html">Third</a>  
+    </div>
   </div>
-  </body>
+  <a href="#news">Paul Poiret</a> 
+  <a href="#home">Catwalk History</a>
+  <a href="">Appropriation</a>
+</div>
+
+<h3>Teil II: Recherchetagebuch</h3>
+<p>Halten Sie in einem Protokoll fest, wie Sie bei der Recherche vorgegangen sind. Ziel der Aufgabe ist es, dass Sie aufzeigen können, wie man ausgehend von einer Frage ein Thema erschliesst. Wie bereits bei der ersten Aufgabe,sind Sie bei der Umsetzung frei(Mindmap, Präsentation, Portfolio, Blogetc.). Im Falle eines Textessollte dieser wiederumden Umfang von 7'000 Zeichen (inkl. Leerzeichen) nicht überschreiten. </p>
+
+</body>
 </html>
+
+
+
+
+
+
+
+
+
+
+<!--<!doctype html>
+<html>
+  <head>
+      <meta charset="utf-8">
+      <title>Kyoto to Catwalk</title>
+      
+      <style>
+  
+  body {
+  background-color: rgb(199, 226, 230);
+  }
+  h1   {color: rgb(82, 76, 76);
+      text-align: center;
+  }
+  h2  {
+  color:rgb(87, 87, 87);  
+  }
+  p    {color: black;}
+  * {font-family: Tahoma;}
+  * {font-family: Tahoma;
+  }
+  body {background-color: rgb(199, 226, 230);
+  }
+  h1   {color: rgb(82, 76, 76);
+      text-align: center;
+  }
+  nav {
+  margin: -8px;  
+  }
+  ul {
+    list-style-type: none;
+    display: block;
+    margin: 0px;
+    border: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    overflow: hidden;
+    background-color: rgb(148, 138, 138);
+    width: 100%;
+    color: white;
+  }
+  li {  
+      float: left;
+  
+  }
+  li a {
+    display: block;
+    color:rgb(82, 76, 76);
+    text-align: center;
+    float: right;
+    margin: 3px;
+    padding-left: 14px;
+    padding-right: 14px;
+    text-decoration: none;
+  }
+  a:link {
+    color: white;
+  }
+  a:hover{
+      background-color: whitesmoke;
+      display: block
+  .dropdown{
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  }
+  
+  </style>
+  </head>
+  
+    <body>
+      <h1>From Kyoto to Catwalk</h1>
+      <h2>Research Journal</h2>
+  
+  
+      <nav>
+        <ul>
+            <li><a href="timeline.html">Research Journal</a></li>
+              <ul class="dropdown">
+                <li><a href="">First</a></li>
+                <li><a href="">Second</a></li>
+              </ul>
+            <li><a href="notes.html">Paul Poiret</a></li>
+            <li><a href="keywords.html">Catwalk</a></li>
+            <li><a href="images.html">Appropriation</a></li>
+            <li><a href="pagelinks.html">Page Links</a></li>
+      </ul>
+    </nav>
+  
+      <p>Just some Text</p>
+    </div>
+    </body>
+  </html>-->
