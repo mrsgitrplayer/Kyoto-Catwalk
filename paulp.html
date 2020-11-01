@@ -82,6 +82,33 @@ h1 {
 .dot {
   list-style-type: none;
 }
+.collapsible {
+  background-color: #777;
+  color: rgb(231, 191, 88);
+;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  margin-left: -8px;
+  margin-right: -8px;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  margin-left: -8px;
+  display: none;
+  overflow: hidden;
+  background-color: #afdde9;
+}
+
 </style>
 </head>
 <body>
@@ -113,15 +140,51 @@ h1 {
 </div>
 
 <h4>Paul Poiret</h4>
-<ul>
-  <li class="dot">...Document my Progress</li>
-  <li class="dot">...Improve my Web Development skills</li>
-</ul>
+<button type="button" class="collapsible">Paul Poiret & Twentieth-Century Fashion Design</button>
+<div class="content">
+  <p>
+        "The most enterprising new Parisian couturier of the day, Paul Poiret, introduced himself to high society and all of the crowned heads of Europe in his self-promoting catalogue, <a href="https://library.si.edu/digital-library/book/robesdepaulpoir00irib">Les robes de Paul Poiret.</a> Illustrated by the young artist Paul Iribe in original, highly colorful stencil prints, this first landmark album of Art Deco fashion plates began a new, far more liberalized image of women through high fashion."
+    </p>
+    <h4>Exoticism - Schéhérazade in Paris</h4>
+    <p>
+        "The exotic influence of Les Ballets Russes and its Schéhérazade was
+        phenomenal; it turned the fashion world of Paris into an extravagant
+        Persian bazaar. The energetic couturier Paul Poiret, already high arbiter
+        of women’s dress design, had developed his own passion for the
+        magic of the Arabian Nights and introduced harem skirts, silk pants,
+        and—as a Poiret signature touch—gold lamé turbans flaunting egret
+        plumes."
+    </p>
+    <h6>Dale Roylance, "Art Deco Paris 1900-1925: Catalogue of the Exhibitino of Pochoir Color Prints from the Graphic Arts Collection, in: The Princeton University Library Chronicle, 61.1, 1999, 1-72."</6>
+</div>
 
-<h3>Teil II: Recherchetagebuch</h3>
-<p>Halten Sie in einem Protokoll fest, wie Sie bei der Recherche vorgegangen sind. Ziel der Aufgabe ist es, dass Sie aufzeigen können, wie man ausgehend von einer Frage ein Thema erschliesst. Wie bereits bei der ersten Aufgabe,sind Sie bei der Umsetzung frei(Mindmap, Präsentation, Portfolio, Blogetc.). Im Falle eines Textessollte dieser wiederumden Umfang von 7'000 Zeichen (inkl. Leerzeichen) nicht überschreiten. </p>
+
+<button type="button" class="collapsible">Open Section 2</button>
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
 
 
+<button type="button" class="collapsible">Open Section 3</button>
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
 
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+    </script>
 </body>
 </html>
