@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+  
+body {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  background-color: darkgoldenrod;
+  color:  #333;
+}
+h1 {
+  text-align: center;
+  color:  #333;
+}
+
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: darkgoldenrod;
+  text-align: center;
+  margin-left:;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: darkgoldenrod;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color:rgb(85, 85, 85);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(231, 191, 88);
+  min-width: 183.55px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color:  #333;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: rgb(180, 234, 238);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dot {
+  list-style-type: none;
+}
+.collapsible {
+  background-color: #777;
+  color: rgb(231, 191, 88);
+;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  margin-left: -8px;
+  margin-right: -8px;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  margin-left: -8px;
+  display: none;
+  overflow: hidden;
+  background-color: #afdde9;
+}
+
+</style>
+</head>
+<body>
+
+  <h1>From Kyoto to Catwalk</h1>
+
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">Research Journal 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="first.html">25. October 2020</a>
+      <a href="second.html">Second</a>
+      <a href="third.html">Third</a>
+      <a href="fourth.html">Fourth</a>
+      <a href="fifth.html">Fifth</a>
+      <a href="sixth.html">Sixth</a>
+      <a href="seventh.html">Seventh</a>
+      <a href="eighth.html">Eight</a>
+      <a href="ninth.html">Ninth</a>
+      <a href="tenth.html">Tenth</a>  
+    </div>
+  </div>
+  <a href="paulp.html">Paul Poiret</a> 
+  <a href="#home">Catwalk History</a>
+  <a href="appro.html">Appropriation</a>
+</div>
+
+<h4>Paul Poiret</h4>
+<button type="button" class="collapsible">Paul Poiret & Twentieth-Century Fashion Design</button>
+<div class="content">
+  <p>
+        "The most enterprising new Parisian couturier of the day, Paul Poiret, introduced himself to high society and all of the crowned heads of Europe in his self-promoting catalogue, <a href="https://library.si.edu/digital-library/book/robesdepaulpoir00irib">Les robes de Paul Poiret.</a> Illustrated by the young artist Paul Iribe in original, highly colorful stencil prints, this first landmark album of Art Deco fashion plates began a new, far more liberalized image of women through high fashion."
+    </p>
+    <h4>Exoticism - Schéhérazade in Paris</h4>
+    <p>
+        "The exotic influence of Les Ballets Russes and its Schéhérazade was
+        phenomenal; it turned the fashion world of Paris into an extravagant
+        Persian bazaar. The energetic couturier Paul Poiret, already high arbiter
+        of women’s dress design, had developed his own passion for the
+        magic of the Arabian Nights and introduced harem skirts, silk pants,
+        and—as a Poiret signature touch—gold lamé turbans flaunting egret
+        plumes."
+    </p>
+    <h6>Dale Roylance, "Art Deco Paris 1900-1925: Catalogue of the Exhibitino of Pochoir Color Prints from the Graphic Arts Collection, in: The Princeton University Library Chronicle, 61.1, 1999, 1-72."</6>
+</div>
+
+
+<button type="button" class="collapsible">Open Section 2</button>
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+
+<button type="button" class="collapsible">Open Section 3</button>
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+    </script>
+</body>
+</html>
