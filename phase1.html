@@ -5,7 +5,10 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <style>
         
-          
+        *{
+          box-sizing: border-box;
+         
+        }
         body {
           font-family:Verdana, Geneva, Tahoma, sans-serif;
           background-color: darkgoldenrod;
@@ -15,13 +18,27 @@
           text-align: center;
           color:  #333;
         }
+        p{
+          margin-right: 5%;
+          margin-left: 5%;
+        }
+        a{
+          color: white;
+          text-decoration: none;
+
+        }
+        a:hover{
+          text-decoration: underline;
+        }
         .navbar {
           overflow: hidden;
           background-color: #333;
           margin-left: -8px;
           margin-right: -8px;
         }
-        
+        ul{
+          list-style-type: square;
+        }
         .navbar a {
           float: left;
           font-size: 16px;
@@ -97,8 +114,7 @@
         
         .active, .collapsible:hover {
           background-color: #555;
-        }
-        
+        }        
         .content {
           padding: 0 18px;
           margin-left: -8px;
@@ -112,6 +128,13 @@
         td {
           border: solid black 1px;
         }
+        #description{
+          border-left: black solid 1px;
+          border-right: black solid 1px;
+          padding-left: 2%;
+          padding-right: 2%;
+        }
+
         </style>
         </head>
         <body>
@@ -168,6 +191,22 @@
 </tr>
 </table>
 
+<h5>Trying to get an overview of the Topic</h5>
+<ul>
+  <li>
+    Finding <a href="finds.html">Material</a>
+  </li>
+  <li>
+    Reading some of it
+  </li>
+  </ul>
+
+  <p id=description>
+Before getting started with the exact or even the vague structure, my project partner and I both decided to do some research on our own.</br>
+The main goal of this being that we would both get a general overview of the topoic and ideally would already find topics we would like to do further research on.</br>
+After we had done our own research, we arranged to establish a first draft for a structure (table above), so that each one of us could now start to research more focussed. </br>
+
+  </p>
 
 </body>
 </html>
