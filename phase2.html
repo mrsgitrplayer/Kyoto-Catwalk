@@ -4,138 +4,113 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <style>
-        
-        *{
-          box-sizing: border-box;
-         
-        }
-        body {
-          font-family:Verdana, Geneva, Tahoma, sans-serif;
-          background-color: darkgoldenrod;
-          color:  #333;
-        }
-        h1 {
-          text-align: center;
-          color:  #333;
-        }
-        p{
-          margin-right: 5%;
-          margin-left: 5%;
-        }
-        a{
-          color: white;
-          text-decoration: none;
-
-        }
-        a:hover{
-          text-decoration: underline;
-        }
-        .navbar {
-          overflow: hidden;
-          background-color: #333;
-          margin-left: -8px;
-          margin-right: -8px;
-        }
-        ul{
-          list-style-type: square;
-        }
-        .navbar a {
-          float: left;
-          font-size: 16px;
-          color: darkgoldenrod;
-          text-align: center;
-          margin-left:;
-          padding: 14px 16px;
-          text-decoration: none;
-        }
-        
-        .dropdown {
-          float: left;
-          overflow: hidden;
-        }
-        
-        .dropdown .dropbtn {
-          font-size: 16px;  
-          border: none;
-          outline: none;
-          color: darkgoldenrod;
-          padding: 14px 16px;
-          background-color: inherit;
-          font-family: inherit;
-          margin: 0;
-        }
-        
-        .navbar a:hover, .dropdown:hover .dropbtn {
-          background-color:rgb(85, 85, 85);
-        }
-        
-        .dropdown-content {
-          display: none;
-          position: absolute;
-          background-color: rgb(231, 191, 88);
-          min-width: 183.55px;
-          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-          z-index: 1;
-        }
-        
-        .dropdown-content a {
-          float: none;
-          color:  #333;
-          padding: 12px 16px;
-          text-decoration: none;
-          display: block;
-          text-align: left;
-        }
-        
-        .dropdown-content a:hover {
-          background-color: rgb(180, 234, 238);
-        }
-        
-        .dropdown:hover .dropdown-content {
-          display: block;
-        }
-        .dot {
-          list-style-type: none;
-        }
-        .collapsible {
-          background-color: #777;
-          color: rgb(231, 191, 88);
-        ;
-          cursor: pointer;
-          padding: 18px;
-          width: 100%;
-          margin-left: -8px;
-          margin-right: -8px;
-          border: none;
-          text-align: left;
-          outline: none;
-          font-size: 15px;
-        }
-        
-        .active, .collapsible:hover {
-          background-color: #555;
-        }        
-        .content {
-          padding: 0 18px;
-          margin-left: -8px;
-          display: none;
-          overflow: hidden;
-          background-color: #afdde9;
-        }
-        table {
-          border-collapse: collapse;
-        }
-        td {
-          border: solid black 1px;
-        }
-        #description{
-          border-left: black solid 1px;
-          border-right: black solid 1px;
-          padding-left: 2%;
-          padding-right: 2%;
-        }
-
-        </style>
+          body {
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            background-color: darkgoldenrod;
+            color:  #333;}
+          h1 {
+            text-align: center;
+            color:  #333;}
+          p, h2, ul {
+            margin-left: 10%;
+            margin-right: 10%;
+          }
+            table {
+            border-collapse: collapse;
+            border: 1px solid black;
+          }
+          td, th {
+            border: 1px solid black;
+          }
+          .map{
+            text-align:center;
+            width:100%;}
+          .navbar {
+            overflow: hidden;
+            background-color: #333;
+            margin-left: -8px;
+            margin-right: -8px;
+            width: ;
+          }
+          .navbar a {
+            float: left;
+            font-size: 16px;
+            color: darkgoldenrod;
+            text-align: center;
+            margin-left:;
+            padding: 14px 16px;
+            text-decoration: none;
+            width: 25%;
+          }
+          .dropdown {
+            float: left;
+            overflow: hidden;
+          }
+          .dropdown .dropbtn {
+            font-size: 16px;  
+            border: none;
+            outline: none;
+            color: darkgoldenrod;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+            width: 100%;
+          }
+          
+          .navbar a:hover, .dropdown:hover .dropbtn {
+            background-color:rgb(85, 85, 85);}
+          .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: rgb(231, 191, 88);
+            min-width: 183.55px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;}
+          .dropdown-content a {
+            float: none;
+            color:  #333;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+            width: 100%;
+          }
+          .dropdown-content a:hover {
+            background-color: rgb(180, 234, 238);
+            width: 151px;
+          }
+          .dropdown:hover .dropdown-content {
+            display:block;
+          }
+          .dot {
+            list-style-type: none;}
+          .collapsible {
+            background-color: #777;
+            color: rgb(231, 191, 88);
+          ;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            margin-left: -8px;
+            margin-right: -8px;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;}
+          .active, .collapsible:hover {
+            background-color: #555;}
+          .content {
+            padding: 0 18px;
+            margin-left: -8px;
+            display: none;
+            overflow: hidden;
+            background-color: #afdde9;}
+            .center
+            {
+              margin-left: auto;
+              margin-right: auto;
+            }
+          </style>
         </head>
         <body>
         
@@ -154,11 +129,11 @@
             </div>
           </div>
           <a href="finds.html">Finds</a> 
-          <a href="weltkarte.html">Weltkarte(WIP)</a>
+          <a href="weltkarte.html">Weltkarte</a>
         </div>
 
 <h2>Phase II - Doing concrete Research</h2>
-<table style="width: 100%; border: solid black 1px;">
+<table class="center">
 <tr>
   <th>First Draft - Table of Content</th>
 </tr>
@@ -195,12 +170,10 @@
 
 
 <p id=description>
-    Based upon the structure we had established, it was now time to do more concrete and focussed research. </br>
+    Based on the structure we had established, it was now time to do more concrete and focussed research. </br>
     In my case that was researching more on Paul Poiret, the History of the Catwalk and Haute Couture. </br>
     During our last meeting we also came across some topics where we were both had not read much about, or where we were not so sure how relevant it would be for our presentation. In these cases we tried to keep them in mind during our research in Phase II, whithout investing too much time in them.</br>
     Due to the current situation I did the majority of my research online, using tools such as swissbib, jstor.org, worldcat.org, kubikat.org, academia/researchgate, ProQuest... </br>
-
-
 </p>
 <p id=description>
     <ul>
@@ -213,8 +186,10 @@
         <li>
             Japan seems to gain popularity in waves. Each "wave" seems to bring new aspects to light.
         </li>
+        <li>
+          In the beginning it almost seems to me that Japan and Japanese culture was spoken for, whereas later on (in my view as of the 1960ies) Japan seems to get its own voice on the European stage with designer such as Rei Kawakubo etc. That is definitely something I want to elaborate on.
+        </li>
     </ul> 
 </p>
-
 </body>
 </html>

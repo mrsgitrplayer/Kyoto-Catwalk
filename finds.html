@@ -4,121 +4,98 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
+  body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: darkgoldenrod;
+    color:  #333;}
+  h1 {
+    text-align: center;
+    color:  #333;}
+  .map{
+    text-align:center;
+    width:100%;}
+  .navbar {
+    overflow: hidden;
+    background-color: #333;
+    margin-left: -8px;
+    margin-right: -8px;
+    width: ;
+  }
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: darkgoldenrod;
+    text-align: center;
+    margin-left:;
+    padding: 14px 16px;
+    text-decoration: none;
+    width: 25%;
+  }
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: darkgoldenrod;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    width: 100%;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color:rgb(85, 85, 85);}
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(231, 191, 88);
+    min-width: 183.55px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;}
+  .dropdown-content a {
+    float: none;
+    color:  #333;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+  }
+  .dropdown-content a:hover {
+    background-color: rgb(180, 234, 238);
+    width: 151px;
+  }
+  .dropdown:hover .dropdown-content {
+    display:block;
+  }
+  .dot {
+    list-style-type: none;}
+  .collapsible {
+    background-color: #777;
+    color: rgb(231, 191, 88);
+  ;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    margin-left: -8px;
+    margin-right: -8px;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;}
+  .active, .collapsible:hover {
+    background-color: #555;}
+  .content {
+    padding: 0 18px;
+    margin-left: -8px;
+    display: none;
+    overflow: hidden;
+    background-color: #afdde9;}
 
-
-body {
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
-  background-color: darkgoldenrod;
-  color:  #333;
-}
-h1 {
-  text-align: center;
-  color:  #333;
-}
-ul{
-  list-style-type: square;
-  color: darkgoldenrod;
-}
-a
-{
-  color: #186f83;
-  text-decoration: none;
-}
-a:hover{
-  text-decoration: underline;
-}
-.navbar {
-  overflow: hidden;
-  background-color: #333;
-  margin-left: -8px;
-  margin-right: -8px;
-}
-
-.navbar a {
-  float: left;
-  font-size: 16px;
-  color: darkgoldenrod;
-  text-align: center;
-  margin-left:;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
-
-.dropdown .dropbtn {
-  font-size: 16px;  
-  border: none;
-  outline: none;
-  color: darkgoldenrod;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-}
-
-.navbar a:hover, .dropdown:hover .dropbtn {
-  background-color:rgb(85, 85, 85);
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: rgb(231, 191, 88);
-  min-width: 183.55px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  float: none;
-  color:  #333;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.dropdown-content a:hover {
-  background-color: rgb(180, 234, 238);
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-.dot {
-  list-style-type: none;
-}
-.collapsible {
-  background-color: #777;
-  color: rgb(231, 191, 88);
-;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  margin-left: -8px;
-  margin-right: -8px;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-}
-
-.active, .collapsible:hover {
-  background-color: #555;
-}
-
-.content {
-  padding: 0 18px;
-  margin-left: -8px;
-  display: none;
-  overflow: hidden;
-  background-color: #afdde9;
-}
-</style>
+  </style>
 </head>
 <body>
 
@@ -137,41 +114,41 @@ a:hover{
     </div>
   </div>
   <a href="finds.html">Finds</a> 
-  <a href="weltkarte.html">Weltkarte(WIP)</a>
+  <a href="weltkarte.html">Weltkarte</a>
 </div>
 
 <h4>Finds</h4>
 <button type="button" class="collapsible">Links</button>
 <div class="content">
     <ul>
-        <li><a href="https://www.metmuseum.org/toah/hd/poir/hd_poir.htm">Paul Poiret - Met Museum</a></li>
-        <li><a href="http://www.kimono.or.jp/dictionary/eng/saganishiki.html">Nishiki Brocade</a></li>
+        <li><a href="https://www.metmuseum.org/toah/hd/poir/hd_poir.htm">Paul Poiret - Met Museum</a></li></br>
+        <li><a href="http://www.kimono.or.jp/dictionary/eng/saganishiki.html">Nishiki Brocade</a></li></br>
         <li><a href="https://www.artandobject.com/articles/traditional-japanese-garment-big-impact-fashion">
-        The Traditional Traditional Japanese Garment with Big Impact on Fashion</a></li>
-        <li><a href="https://www.kci.or.jp/en/research/dresstudy/pdf/e_Fukai_Japonism_in_Fashion.pdf">Japonism in Fashion - Akiko Fukai</a></li>
-        <li><a href="https://artsandculture.google.com/entity/kimono/m049kc?hl=en">Kimono - Google Arts & Culture</a></li>
-        <li><a href="https://cehs.unl.edu/hillestad/japan-and-fashion-impact-and-influence/">Japan and Fashion: Impact and Influence</a></li>
-        <li><a href="https://apnews.com/article/3def29771e92bba2ba2a7185c0049c4a">Japan: A Lasting Influence in French Design</a></li>
-        <li><a href="https://www.trademarkia.com/company-kimono-intimates-inc-4929716-page-1-2">Trademarkia</a></li>
+        The Traditional Traditional Japanese Garment with Big Impact on Fashion</a></li></br>
+        <li><a href="https://www.kci.or.jp/en/research/dresstudy/pdf/e_Fukai_Japonism_in_Fashion.pdf">Japonism in Fashion - Akiko Fukai</a></li></br>
+        <li><a href="https://artsandculture.google.com/entity/kimono/m049kc?hl=en">Kimono - Google Arts & Culture</a></li></br>
+        <li><a href="https://cehs.unl.edu/hillestad/japan-and-fashion-impact-and-influence/">Japan and Fashion: Impact and Influence</a></li></br>
+        <li><a href="https://apnews.com/article/3def29771e92bba2ba2a7185c0049c4a">Japan: A Lasting Influence in French Design</a></li></br>
+        <li><a href="https://www.trademarkia.com/company-kimono-intimates-inc-4929716-page-1-2">Trademarkia</a></li></br>
         <li>
           <a href="https://www.theguardian.com/lifeandstyle/2019/jul/01/our-traditional-garment-is-not-spandex-kim-kardashian-west-renames-brand-amid-outcry">#KimOhNo: Kim Kardashian West renames Kimono brand amid outcry</a>
-        </li>
+        </li></br>
         <li>
           <a href="https://www.nytimes.com/2019/06/27/fashion/kim-kardashian-west-kimono-cultural-appropriation.html">Kim Kardashian West and the Kimono Controversy</a>
-        </li>
+        </li></br>
         <li>
           <a href="https://www.bbc.com/news/world-asia-48767678">Kim Kardashian West's Kimono underwear meets Japanese backlash</a>
-        </li>
+        </li></br>
         
         <li>
           <a href="https://www.change.org/p/kim-kardashian-west-say-no-to-kim-kardashian-s-kimono-kimohno">Petition - Say No to Kim Kardashian's "KIMONO" #KimOhNo</a>
-        </li>
+        </li></br>
         <li>
           <a href="https://www.highsnobiety.com/p/kim-kardashian-west-kimono-trademarks/">An Investigation of Kim Kardashian West's Kimono Trademarks</a>
-        </li>
+        </li></br>
         <li>
           <a href="https://www.bbc.com/news/newsbeat-48864770">Kim Kardashian-West: Missguided USA ordered to pay $2.7m in damages</a>
-        </li>
+        </li></br>
       </ul>
       
 </div>
